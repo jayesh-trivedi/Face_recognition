@@ -2,7 +2,7 @@
 This face recognizer implements the MTCNN and FaceNet model to recognise people in the given image. MTCNN algorithm is used to extract the face of the person, whereas the FaceNet system create the embedding vector for the face. A linear support vector classifier then classfies the given face vector. The current model has been trained on the 5 Celebratory Dataset. The model can recognise any person by adding their images to the dataset.
 *Input*                      |  *Output* 
 :-------------------------:|:-------------------------:
-<img src="https://github.com/jayesh-trivedi/face_recognition/blob/master/images/test.jpg" height="480" width="380" ></a>   |  ![](https://github.com/jayesh-trivedi/face_recognition/blob/master/images/screenshot.png)
+<img src="https://github.com/jayesh-trivedi/face_recognition/blob/master/images/test.jpg" height="500" width="380" ></a>   |  ![](https://github.com/jayesh-trivedi/face_recognition/blob/master/images/screenshot.png)
 
 ## Dataset
 The [5 Celebratory dataset](https://www.kaggle.com/dansbecker/5-celebrity-faces-dataset) by DanB is used here.
@@ -58,43 +58,31 @@ face = extract_face('images/test.jpg')
 ## Using custom dataset
 Custom dataset can be used with this model by arranging the images of the people in the following structure and then then running the scripts in the above mentioned fashion. 
 
-
-   |- face-recognizer/
-  
-      |- dataset/
-         |- data/
-            |- train/
-               |- person1/
-                  |- p11.jpg
-                  |- p12.jpg
-                     .
-                     .
-                  |- p1N.jpg
-               |- person2/
-                  |- p21.jpg
-                     .
-                     .
-                  .
-                  .
-               |- personN/
-                  . 
-                  .
-            |- val/
-               |- person1/
-                  |- p11.jpg
-                  |- p12.jpg
-                     .
-                     .
-                  |- p1N.jpg
-               |- person2/
-                  |- p21.jpg
-                     .
-                     .
-                  .
-                  .
-               |- personN/
-                     .
-                     .
+```
+dataset
+├── train
+│   ├── person1
+│   ├── person2
+│   ├.  
+│   ├.    
+│   └── personN
+└── val
+    ├── person1
+    ├── person2
+    ├.  
+    ├.    
+    └── personN
+```
               
-               
-                
+## Learn more
+
+#### MTCNN
+[Joint Face Detection and Alignment using
+Multi-task Cascaded Convolutional Networks](https://arxiv.org/pdf/1604.02878.pdf) by Kaipeng Zhang, Zhanpeng Zhang, Zhifeng Li, Senior Member, IEEE, and Yu Qiao
+
+Implementation of the MTCNN face detector for Keras in Python3.4+, [Official documentation](https://pypi.org/project/mtcnn/)
+
+#### FaceNet
+FaceNet: A Unified Embedding for Face Recognition and Clustering [research paper](https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_089.pdf)
+
+
