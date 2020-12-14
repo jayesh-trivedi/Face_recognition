@@ -80,9 +80,9 @@ dataset
 [Joint Face Detection and Alignment using
 Multi-task Cascaded Convolutional Networks](https://arxiv.org/pdf/1604.02878.pdf) by Kaipeng Zhang, Zhanpeng Zhang, Zhifeng Li, Senior Member, IEEE, and Yu Qiao
 
-Implementation of the MTCNN face detector for Keras in Python3.4+, [Official documentation](https://pypi.org/project/mtcnn/)
+[Implementation of the MTCNN face detector for Keras in Python3.4+](https://pypi.org/project/mtcnn/)
 
 #### FaceNet
-FaceNet: A Unified Embedding for Face Recognition and Clustering [research paper](https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_089.pdf)
+[FaceNet: A Unified Embedding for Face Recognition and Clustering](https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_089.pdf)
 
 
