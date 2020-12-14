@@ -36,9 +36,9 @@ def load_dataset(dataset_path):
     return np.asarray(inputs), np.asarray(outputs)
 
 
-train_x, train_y = load_dataset('dataset/data/train/')
+train_x, train_y = load_dataset('dataset/train/')
 print(train_x.shape, train_y.shape)
-test_x, test_y = load_dataset('dataset/data/val/')
+test_x, test_y = load_dataset('dataset/val/')
 print(test_x.shape, test_y.shape)
 
 # save and compress the dataset for further use
